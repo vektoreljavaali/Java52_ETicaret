@@ -1,5 +1,6 @@
 package com.vektorel.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -18,11 +19,20 @@ public class tblurun {
 	private String ad;
 	private double fiyat;
 	private double stok;
+	@Column(length = 5000)
 	private String aciklama;
 	private int kategoriid;
 	private String kargosuresi;
 	private double agirlik;
 	private int ortalamapuan;
+	private String anaresim;
+	
+	public String getAnaresim() {
+		return anaresim;
+	}
+	public void setAnaresim(String anaresim) {
+		this.anaresim = anaresim;
+	}
 	public long getId() {
 		return id;
 	}

@@ -49,6 +49,7 @@ Contributor(s):
     <mapping class="com.vektorel.model.tblurun"></mapping>
     <mapping class="com.vektorel.model.tblusers"></mapping>
     <mapping class="com.vektorel.model.tblyorum"></mapping>
+    <mapping class="com.vektorel.model.tblresim"></mapping>
        
   </session-factory>
 </hibernate-configuration>
