@@ -31,8 +31,7 @@ public class IndexBean {
 		
 		// sayfamýz için kullanacaðýmýz modele db den çekmiþ olduðumuz
 		// verileri yüklüyoruz.
-		model.setListKategori(DbKategori.MyList(new tblkategori()));
-		model.setListPages(dbPages.MyList(new tblpages()));
+		model.setListeKategori(DbKategori.MyList(new tblkategori()));
 	}
 	
 	private void PagesAdd() {
