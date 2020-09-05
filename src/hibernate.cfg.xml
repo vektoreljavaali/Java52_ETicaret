@@ -45,6 +45,7 @@ Contributor(s):
     <property name="hibernate.show_sql">true</property>
     
     <mapping class="com.vektorel.model.tblkategori"></mapping>
+    <mapping class="com.vektorel.model.tblpages"></mapping>
        
   </session-factory>
 </hibernate-configuration>
