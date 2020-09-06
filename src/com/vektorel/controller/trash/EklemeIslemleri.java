@@ -1,14 +1,21 @@
 package com.vektorel.controller.trash;
 
+import com.vektorel.dao.website.AnaSayfaDao;
+import com.vektorel.dao.website.SiteDetayDao;
 import com.vektorel.dao.website.UrunDao;
+import com.vektorel.model.tblanasayfa;
+import com.vektorel.model.tblsitedetail;
 import com.vektorel.model.tblurun;
 
 public class EklemeIslemleri {
 
 	private UrunDao dburun;
-	
+	private AnaSayfaDao anasayfa;
+	private SiteDetayDao siteDetayDao;
 	public EklemeIslemleri() {
 		dburun = new UrunDao();
+		anasayfa = new AnaSayfaDao();
+		siteDetayDao = new SiteDetayDao();
 	}
 	
 	public void UrunEkleme() {
@@ -104,6 +111,27 @@ public class EklemeIslemleri {
 		dburun.Save(ur);
 	}
 	
+	public void AnaSayfaEkleme() {
+		
+		tblanasayfa sf = new tblanasayfa();
+		sf.setKampanya_1_url("img/banner/banner-1.jpg");
+		sf.setKampanya_1_url("img/banner/banner-2.jpg");
+		
+		anasayfa.Save(sf);
+	}
 	
 	
+	public void SiteDetayEkleme(){
+		tblsitedetail detay = new tblsitedetail();
+		detay.setAdres("Ankara Merkez kýzýlay caddesi");
+		detay.setEmail("vektorel@gmail.com");
+		detay.setFacebook("https://www.facebook.com");
+		detay.setFirmaadi("E-Ticaret Sistemi A.Þ.");
+		detay.setFirmalink("www.google.com");
+		detay.setInstagram("");
+		detay.setTelefon("0 555 666 11 22");
+		detay.setTwitter("");
+		
+		siteDetayDao.Save(detay);		
+	} 
 }

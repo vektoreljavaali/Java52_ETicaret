@@ -50,6 +50,8 @@ Contributor(s):
     <mapping class="com.vektorel.model.tblusers"></mapping>
     <mapping class="com.vektorel.model.tblyorum"></mapping>
     <mapping class="com.vektorel.model.tblresim"></mapping>
+    <mapping class="com.vektorel.model.tblanasayfa"></mapping>
+    <mapping class="com.vektorel.model.tblsitedetail"></mapping>
        
   </session-factory>
 </hibernate-configuration>

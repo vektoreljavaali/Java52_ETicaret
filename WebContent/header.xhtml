@@ -156,10 +156,15 @@
                         <ul>
                         
                          <ui:repeat var="ls" value="#{headerBean.kategoriListesi}">
-                           		<li><a href="#">#{ls.ad}</a></li>
+                           		  <li>
+                           		<h:commandLink id="#{ld.id}_id"
+                           		 action="#{indexBean.urlSec}"
+                           		 value="#{ls.ad}" />
+                           		
+                           		</li>                           	
                          </ui:repeat>
                           
-                           
+                         
                         </ul>
                     </div>
                 </div>

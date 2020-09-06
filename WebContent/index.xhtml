@@ -29,11 +29,11 @@
 </h:head>
 
 <h:body>
-	<h:form>
+	<h:form id="frmAnasayfa">
 		
 		<ui:include src="header.xhtml" />
 		
-		<ui:include src="body.xhtml" />
+		<ui:include src="#{navigations.mainPage}" />
 		
 		<ui:include src="footer.xhtml" />
 	</h:form>

@@ -1,0 +1,8 @@
+1- kategori ürün sayfası 
+2- kurum bilgisi
+3- Ürün detay sayfası
+4- sepet yapısı
+-------------------
+5- login, register sayfası
+6- admin paneli
+7- ürün ekleme sayfası

@@ -111,6 +111,7 @@ public class VeritabaniIsletimcisi<T> implements IGENERICCRUD<T>{
                 Kapat();
                 return t;
             } catch (Exception e) {
+            	System.out.println("HATA...: "+ e.toString());
                 Kapat();
                 return null;
                         
@@ -119,6 +120,23 @@ public class VeritabaniIsletimcisi<T> implements IGENERICCRUD<T>{
         return null;
     }
 
+    public T GetbyId(int id, T t){
+        if(Ac()){
+            try {
+                criteria = session.createCriteria(t.getClass());
+                criteria.add(Restrictions.eq("id", id));
+                t = (T) criteria.list().get(0);
+                Kapat();
+                return t;
+            } catch (Exception e) {
+            	System.out.println("HATA...: "+ e.toString());
+                Kapat();
+                return null;
+                        
+            }
+        }
+        return null;
+    }
     @Override
     public List<T> MyList(T t) {            
            if(Ac()){
