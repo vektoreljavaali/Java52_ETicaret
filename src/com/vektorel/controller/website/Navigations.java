@@ -8,8 +8,8 @@ import javax.faces.bean.SessionScoped;
 public class Navigations {
 
 	private String MainPage = "body.xhtml";
-	private int id=1;
-	public void urlSec() {
+
+	public void urlSec(int id) {
 		System.out.println("Seçilen id..: "+ id);
 		switch (id) {
 		case 1: MainPage = "kategori.xhtml";break;

@@ -158,7 +158,7 @@
                          <ui:repeat var="ls" value="#{headerBean.kategoriListesi}">
                            		  <li>
                            		<h:commandLink id="#{ld.id}_id"
-                           		 action="#{navigations.urlSec}"
+                           		 action="#{navigations.urlSec(ls.id)}"
                            		 value="#{ls.ad}" />
                            		
                            		</li>                           	
