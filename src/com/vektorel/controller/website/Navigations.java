@@ -21,6 +21,11 @@ public class Navigations {
 	}
 	
 	
+	public void UrunSec(long id) {
+		UrunBean.urunId = id;
+		MainPage = "urundetay.xhtml";
+	}
+	
 	public String getMainPage() {
 		return MainPage;
 	}

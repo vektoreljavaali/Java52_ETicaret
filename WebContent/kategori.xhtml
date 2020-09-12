@@ -216,7 +216,10 @@
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6><a href="#">#{urlist.ad}</a></h6>
+                                    <h6>
+                                    <h:commandLink value="#{urlist.ad}" action="#{navigations.UrunSec(urlist.id)}"/>
+                                   
+                                    </h6>
                                     <h5>#{urlist.fiyat}</h5>
                                 </div>
                             </div>
