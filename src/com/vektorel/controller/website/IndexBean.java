@@ -46,6 +46,7 @@ public class IndexBean {
 		//PagesAdd();
 		//Ekleme();
 		//new EklemeIslemleri().UrunEkleme();
+		//new EklemeIslemleri().UrunEkleme();
 		//new EklemeIslemleri().AnaSayfaEkleme();
 		//new EklemeIslemleri().SiteDetayEkleme();
 		// sayfamýz için kullanacaðýmýz modele db den çekmiþ olduðumuz
