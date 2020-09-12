@@ -10,7 +10,7 @@ public class Navigations {
 	private String MainPage = "body.xhtml";
 
 	public void urlSec(int id) {
-		System.out.println("Seçilen id..: "+ id);
+		KategoriBean.kategoriId = id;
 		switch (id) {
 		case 1: MainPage = "kategori.xhtml";break;
 		case 2: MainPage = "kategori.xhtml";break;

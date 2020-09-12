@@ -31,4 +31,13 @@ public class UrunDao extends VeritabaniIsletimcisi<tblurun> {
 		return result;
 	}
 	
+	public List<tblurun> getAllByKategoriId(int kategoriId){
+		List<tblurun> result = new ArrayList<tblurun>();
+		
+		for (tblurun myurun : MyList(new tblurun())) {
+			if(myurun.getKategoriid()==kategoriId)
+				result.add(myurun);
+		}		
+		return result;
+	}
 }
