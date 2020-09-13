@@ -52,6 +52,7 @@ Contributor(s):
     <mapping class="com.vektorel.model.tblresim"></mapping>
     <mapping class="com.vektorel.model.tblanasayfa"></mapping>
     <mapping class="com.vektorel.model.tblsitedetail"></mapping>
+    <mapping class="com.vektorel.model.tblsepet"></mapping>
        
   </session-factory>
 </hibernate-configuration>

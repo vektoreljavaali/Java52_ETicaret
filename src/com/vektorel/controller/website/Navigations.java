@@ -20,6 +20,12 @@ public class Navigations {
 		
 	}
 	
+	public void Sepet(long id) {
+		SepetBean.urunId = id;
+		SepetBean.isAdding = true;
+		SepetBean.adet = UrunBean.adet;
+		MainPage = "sepet.xhtml";
+	}
 	
 	public void UrunSec(long id) {
 		UrunBean.urunId = id;

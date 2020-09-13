@@ -14,6 +14,7 @@ public class UrunBean {
 	public static long urunId;
 	private UrunDao DbUrun;
 	private ModelWebUrunDetay model;
+	public static int adet=1;
 	private ResimDao DbResim;
 	public UrunBean() {
 		DbUrun = new UrunDao();
@@ -30,6 +31,14 @@ public class UrunBean {
 	}
 	public void setModel(ModelWebUrunDetay model) {
 		this.model = model;
+	}
+
+	public int getAdet() {
+		return adet;
+	}
+
+	public void setAdet(int adet) {
+		this.adet = adet;
 	}
 	
 	
