@@ -20,14 +20,14 @@
                                 src="#{urunBean.model.urun.anaresim}" alt="" />
                         </div>
                         <div class="product__details__pic__slider owl-carousel">
-                            <img data-imgbigurl="img/product/details/product-details-2.jpg"
-                                src="img/product/details/thumb-1.jpg" alt="" />
-                            <img data-imgbigurl="img/product/details/product-details-3.jpg"
-                                src="img/product/details/thumb-2.jpg" alt="" />
-                            <img data-imgbigurl="img/product/details/product-details-5.jpg"
-                                src="img/product/details/thumb-3.jpg" alt="" />
-                            <img data-imgbigurl="img/product/details/product-details-4.jpg"
-                                src="img/product/details/thumb-4.jpg" alt="" />
+                            <img data-imgbigurl="#{urunBean.model.urun.anaresim}"
+                                src="#{urunBean.model.urun.anaresim}" alt="" />
+                               <ui:repeat var="rl" value="#{urunBean.model.urunResimListesi}">
+                                <img data-imgbigurl="#{rl.resimurl}"
+                                src="#{rl.resimurl}" alt="" />
+                               </ui:repeat>
+                           
+                         
                         </div>
                     </div>
                 </div>

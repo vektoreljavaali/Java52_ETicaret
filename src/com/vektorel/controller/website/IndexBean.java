@@ -49,6 +49,7 @@ public class IndexBean {
 		//new EklemeIslemleri().UrunEkleme();
 		//new EklemeIslemleri().AnaSayfaEkleme();
 		//new EklemeIslemleri().SiteDetayEkleme();
+		new EklemeIslemleri().UrunResimEkleme();
 		// sayfamýz için kullanacaðýmýz modele db den çekmiþ olduðumuz
 		// verileri yüklüyoruz.
 		model.setListeKategori(DbKategori.MyList(new tblkategori()));

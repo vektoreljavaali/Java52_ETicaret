@@ -1,9 +1,11 @@
 package com.vektorel.controller.trash;
 
 import com.vektorel.dao.website.AnaSayfaDao;
+import com.vektorel.dao.website.ResimDao;
 import com.vektorel.dao.website.SiteDetayDao;
 import com.vektorel.dao.website.UrunDao;
 import com.vektorel.model.tblanasayfa;
+import com.vektorel.model.tblresim;
 import com.vektorel.model.tblsitedetail;
 import com.vektorel.model.tblurun;
 
@@ -12,10 +14,12 @@ public class EklemeIslemleri {
 	private UrunDao dburun;
 	private AnaSayfaDao anasayfa;
 	private SiteDetayDao siteDetayDao;
+	private ResimDao dbresim;
 	public EklemeIslemleri() {
 		dburun = new UrunDao();
 		anasayfa = new AnaSayfaDao();
 		siteDetayDao = new SiteDetayDao();
+		dbresim = new ResimDao();
 	}
 	
 	public void UrunEkleme() {
@@ -109,6 +113,30 @@ public class EklemeIslemleri {
 		ur.setStok(20);
 		ur.setAnaresim("img/product/galaxim11.jpg");
 		dburun.Save(ur);
+	}
+	
+	public void UrunResimEkleme() {
+		tblresim resim;
+		resim = new tblresim();
+		resim.setResimurl("img/product/img_detay/note_1.jpg");		
+		resim.setUrunid(3);
+		dbresim.Save(resim);
+		
+		resim = new tblresim();
+		resim.setResimurl("img/product/img_detay/note_2.jpg");		
+		resim.setUrunid(3);
+		dbresim.Save(resim);
+		
+		resim = new tblresim();
+		resim.setResimurl("img/product/img_detay/note_3.jpg");		
+		resim.setUrunid(3);
+		dbresim.Save(resim);
+		
+		resim = new tblresim();
+		resim.setResimurl("img/product/img_detay/note_4.jpg");		
+		resim.setUrunid(3);
+		dbresim.Save(resim);
+		
 	}
 	
 	public void AnaSayfaEkleme() {
