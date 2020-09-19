@@ -4,10 +4,12 @@ import com.vektorel.dao.website.AnaSayfaDao;
 import com.vektorel.dao.website.ResimDao;
 import com.vektorel.dao.website.SiteDetayDao;
 import com.vektorel.dao.website.UrunDao;
+import com.vektorel.dao.website.UsersDao;
 import com.vektorel.model.tblanasayfa;
 import com.vektorel.model.tblresim;
 import com.vektorel.model.tblsitedetail;
 import com.vektorel.model.tblurun;
+import com.vektorel.model.tblusers;
 
 public class EklemeIslemleri {
 
@@ -15,11 +17,22 @@ public class EklemeIslemleri {
 	private AnaSayfaDao anasayfa;
 	private SiteDetayDao siteDetayDao;
 	private ResimDao dbresim;
+	private UsersDao dbUsers;
 	public EklemeIslemleri() {
 		dburun = new UrunDao();
 		anasayfa = new AnaSayfaDao();
 		siteDetayDao = new SiteDetayDao();
 		dbresim = new ResimDao();
+		dbUsers = new UsersDao();
+	}
+	
+	public void KullaniciEkle() {
+		tblusers users = new tblusers();
+		users.setAdsoyad("Muhammet HOCA");
+		users.setKullaniciadi("muhammet");
+		users.setSifre("123456");
+		
+		dbUsers.Save(users);
 	}
 	
 	public void UrunEkleme() {
@@ -147,8 +160,7 @@ public class EklemeIslemleri {
 		
 		anasayfa.Save(sf);
 	}
-	
-	
+		
 	public void SiteDetayEkleme(){
 		tblsitedetail detay = new tblsitedetail();
 		detay.setAdres("Ankara Merkez kýzýlay caddesi");

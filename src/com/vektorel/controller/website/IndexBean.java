@@ -43,6 +43,7 @@ public class IndexBean {
 		// oluþturuyoruz. bunun içine kategori listesi
 		// ürün listesi, duyurular, 
 		model = new ModelWebSiteIndex();
+		
 		//PagesAdd();
 		//Ekleme();
 		//new EklemeIslemleri().UrunEkleme();
@@ -50,6 +51,7 @@ public class IndexBean {
 		//new EklemeIslemleri().AnaSayfaEkleme();
 		//new EklemeIslemleri().SiteDetayEkleme();
 		//new EklemeIslemleri().UrunResimEkleme();
+		//new EklemeIslemleri().KullaniciEkle();
 		// sayfamýz için kullanacaðýmýz modele db den çekmiþ olduðumuz
 		// verileri yüklüyoruz.
 		model.setListeKategori(DbKategori.MyList(new tblkategori()));

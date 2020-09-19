@@ -48,7 +48,9 @@
                   </div>
                   <h:commandButton value="Giriş Yap" class="btn btn-block login-btn mb-4" 
                   action="#{loginBean.GirisYap}" />
-                 
+                  <p>
+                  	<h:outputLabel value="#{loginBean.hata}" style="color:red"/>
+                  </p>
                
                 <a href="#!" class="forgot-password-link">Şifre mi Kayıp Gel Benle</a>
                 <p class="login-card-footer-text">Hesabın yok nasıl insansın sen? <a href="#!" class="text-reset">Register here</a></p>

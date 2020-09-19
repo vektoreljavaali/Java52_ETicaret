@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<ui:composition>
+
+	<div class="row">
+
+		<div class="col-md-12">
+
+			<div class="panel panel-flat">
+				<div class="panel-heading">
+					<h6 class="panel-title">Ürün Ekleme</h6>
+					<div class="heading-elements">
+
+						<div class="form-group">
+							<label
+								class="checkbox-inline checkbox-switchery checkbox-right switchery-xs">
+								<input type="checkbox" class="switch" checked="checked" />
+
+							</label>
+						</div>
+
+					</div>
+				</div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12">
+
+							<div class="form-group">
+
+								<div class="col-lg-7">
+									<div class="input-group">
+										<span class="input-group-addon bg-primary"><i
+											class="icon-magazine"></i></span> 
+											<h:inputText type="text"
+											value="#{adminUrunBean.urun.ad}"
+											class="form-control" placeholder="Ürün Adı"/>
+											
+									</div>
+								</div>
+							</div>
+
+							<div class="form-group">
+
+								<div class="col-lg-7">
+									<div class="input-group">
+										<span class="input-group-addon bg-primary"><i
+											class="icon-books "></i></span> 
+											<h:inputText type="text"
+											value="#{adminUrunBean.urun.aciklama}"
+											class="form-control" placeholder="Ürün Açıklaması"/>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+
+								<div class="col-lg-7">
+									<div class="input-group">
+										<span class="input-group-addon bg-primary"><i
+											class="icon-pin-alt"></i></span> 
+						<h:inputText type="text"
+											value="#{adminUrunBean.urun.agirlik}"
+											class="form-control" placeholder="Ürün Ağırlığı"/>									</div>
+								</div>
+							</div>
+							<div class="form-group">
+
+								<div class="col-lg-7">
+									<div class="input-group">
+										<span class="input-group-addon bg-primary"><i
+											class="icon-coins"></i></span> 
+	<h:inputText type="text"
+											value="#{adminUrunBean.urun.fiyat}"
+											class="form-control" placeholder="Ürün Fiyatı"/>
+									</div>
+								</div>
+							</div>
+
+							<div class="form-group">
+
+								<div class="col-lg-7">
+									<div class="input-group">
+										<span class="input-group-addon bg-primary"><i
+											class="icon-cart4"></i></span> 	<h:inputText type="text"
+											value="#{adminUrunBean.urun.stok}"
+											class="form-control" placeholder="Ürün Stok"/>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-lg-7">
+									<div class="input-group">
+										<span class="input-group-addon bg-primary"><i
+											class="icon-pin-alt"></i></span>	<h:inputText type="text"
+											value="#{adminUrunBean.urun.kargosuresi}"
+											class="form-control" placeholder="Ürün Kargo süresi"/>
+									</div>
+								</div>
+							</div>
+
+<br></br>
+<div class="form-group col-md-12">
+<h:commandButton type="submit" 
+action="#{adminUrunBean.UrunKayit}"
+value="Ürün Kaydet"
+class="btn btn-block bg-teal-400 btn-labeled btn-rounded">
+
+</h:commandButton>
+	
+</div>
+
+
+						</div>
+					</div>
+				</div>
+
+				<div class="position-relative" id="traffic-sources"></div>
+			</div>
+
+		</div>
+
+	</div>
+
+</ui:composition>
+</html>
